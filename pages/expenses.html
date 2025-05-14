@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>expMan - Expenses</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body class="min-h-screen text-base py-10 px-5 font-semibold text-slate-700 dark:text-slate-300 dark:bg-black/80 ">
+
+    <!-- Site Navbar  -->
+    <nav class="siteNav text-lg flex items-center justify-between uppercase">
+        <a href="../home.html" class="">Hm</a>
+        <div class="nav-links flex items-center">
+            <a href="../pages/expenses.html" class="active nav-links bg-[#222222] text-slate-300 p-2 rounded-lg">Ex</a>
+            <div class="mx-1">.</div>
+            <a href="../pages/habits.html">Hb</a>
+            <div class="mx-1">.</div>
+            <a href="../pages/counts.html">Co</a>
+        </div>
+    </nav>
+
+    <!-- Expense Action Button  -->
+    <section class="ex-actionButton fixed bottom-10 right-5 z-20 bg-[#222222] rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-10 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+    </section>
+
+    <!-- Add New Expense + Base Amount  -->
+    <section
+        class="ex-expenseDetailsWrapper py-10 px-5 fixed left-0 top-0 w-full h-screen z-30 bg-white dark:bg-[#222222]">
+
+        <!-- Expense Titles  -->
+        <section class="ex-titles flex items-center justify-between">
+            <span class="uppercase p-2 rounded-lg text-slate-300 bg-[#222222]">New Expense</span>
+            <span class="uppercase">Base Amount</span>
+        </section>
+
+        <section class="ex-newExpense"></section>
+
+    </section>
+
+
+    <!-- Firebase Scripts  -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="./scripts/dbConnect.js"></script>
+    <script src="./scripts/index.js"></script> -->
+
+</body>
+
+</html>
