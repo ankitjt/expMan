@@ -10,17 +10,18 @@
 
 </head>
 
-<body class="min-h-screen text-base py-10 px-5 font-semibold text-slate-700 dark:text-slate-300 dark:bg-black/80 ">
+<body
+    class="min-h-screen text-base py-10 px-5 font-bold dark:font-medium text-[#222222] dark:text-slate-300 dark:bg-black/80 overflow-x-hidden">
 
     <!-- Site Navbar  -->
-    <nav class="siteNav text-lg flex items-center justify-between uppercase">
-        <a href="./home.html" class="active nav-links bg-[#222222] text-slate-300 p-2 rounded-lg">Hm</a>
-        <div class="nav-links flex items-center">
-            <a href="./pages/expenses.html">Ex</a>
-            <div class="mx-1">.</div>
-            <a href="./pages/habits.html">Hb</a>
-            <div class="mx-1">.</div>
-            <a href="./pages/counts.html">Co</a>
+    <nav class="siteNav flex items-center justify-between uppercase">
+        <a href="../home.html" class="nav-link text-slate-400 border-b-4 border-double">Hm</a>
+        <div class="nav-links flex items-center gap-x-3 justify-center">
+            <a href="./pages/expenses.html" class="nav-link text-slate-400 border-b-4 border-double">Ex</a>
+            <span class="bg-[#222222] rounded-full p-1"></span>
+            <a href="./pages/habits.html" class="nav-link text-slate-400 border-b-4 border-double">Hb</a>
+            <span class="bg-[#222222] rounded-full p-1"></span>
+            <a href="./pages/counts.html" class="nav-link text-slate-400 border-b-4 border-double">Co</a>
         </div>
     </nav>
 
@@ -151,7 +152,7 @@
         </section>
 
         <!-- Count List  -->
-        <section class="co-listsWrapper bg-slate-200 rounded-lg p-3 flex flex-col gap-y-2 mt-2 dark:bg-black/80">
+        <section class="co-listsWrapper bg-slate-200 rounded-lg p-3 flex flex-col gap-y-2 mt-2 dark:bg-black/40">
 
             <div
                 class="co_list flex items-center justify-between bg-white p-2 rounded-lg dark:bg-[#222222] dark:text-slate-300">
@@ -185,7 +186,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="./scripts/dbConnect.js"></script>
     <script src="./scripts/index.js"></script> -->
-
+    <script src="./scripts/common.js"></script>
 </body>
 
 </html>
