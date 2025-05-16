@@ -3,8 +3,8 @@ let currentPath = window.location.pathname.split("/").pop()
 navLinks.forEach(link => {
     let linkPath = link.getAttribute("href").split("/").pop()
     if (linkPath === currentPath) {
-        link.classList.add("border-[#222222]", "dark:border-slate-300", "text-[#222222]")
-        link.classList.remove("text-slate-400")
+        link.classList.add("border-[#222222]", "dark:border-white", "text-[#222222]", "dark:text-white")
+        link.classList.remove("text-slate-400","border-transparent")
     }
 })
 

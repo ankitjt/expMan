@@ -16,11 +16,11 @@ let ex_base = document.querySelector(".ex-base")
 ex_titles.forEach(title => {
     title.onclick = () => {
         ex_titles.forEach(t => {
-            t.classList.remove("border-b-4", "border-double", "border-[#222222]", "dark:border-slate-300")
-            t.classList.add("text-slate-400")
+            t.classList.remove("border-[#222222]", "dark:border-white")
+            t.classList.add("text-slate-400","border-transparent")
         })
-        title.classList.add("border-b-4", "border-double", "border-[#222222]", "dark:border-slate-300", "text-[#222222]")
-        title.classList.remove("text-slate-400")
+        title.classList.add("border-[#222222]", "dark:border-white", "text-[#222222]","dark:text-white")
+        title.classList.remove("text-slate-400","border-transparent")
         
         if (title.dataset.section === "newExpense") {
             ex_base.classList.add("-left-[100vw]")
@@ -63,11 +63,11 @@ let ex_views_statsWrapper = document.querySelector(".ex-views-statsWrapper")
 ex_views.forEach(view => {
     view.onclick = () => {
         ex_views.forEach(v => {
-            v.classList.remove("border-slate-700")
-            v.classList.add("text-slate-400", "border-transparent")
+            v.classList.remove("dark:border-white","border-[#222222]")
+            v.classList.add("text-slate-400","border-transparent")
         })
-        view.classList.add("border-slate-700")
-        view.classList.remove("text-slate-400", "border-transparent")
+        view.classList.add("dark:border-white","border-[#222222]")
+        view.classList.remove("text-slate-400","border-transparent")
         
         if (view.dataset.view === "ledger") {
             ex_views_statsWrapper.classList.add("-left-[100vw]")
