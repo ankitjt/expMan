@@ -1,6 +1,6 @@
-let navLinks = document.querySelectorAll(".nav-link")
+let pageLinks = document.querySelectorAll(".page-link")
 let currentPath = window.location.pathname.split("/").pop()
-navLinks.forEach(link => {
+pageLinks.forEach(link => {
     let linkPath = link.getAttribute("href").split("/").pop()
     if (linkPath === currentPath) {
         link.classList.add("border-[#222222]", "dark:border-white", "text-[#222222]", "dark:text-white")
